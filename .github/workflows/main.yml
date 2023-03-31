@@ -65,7 +65,7 @@ jobs:
       with:
         host: 51.250.69.0
         username: vlad
-        key: ${{ secrets.SSH_KEY }} # Если ваш ssh-ключ защищён фразой-паролем
+        key: ${{ secrets.SSH_KEY }} 
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull pocomacho/infra_actions:latest 
