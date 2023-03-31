@@ -65,7 +65,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }} 
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC95fx6TMaQ5iJ3rGemIUn8MccgTd5hZCx2JsLsvRjoZ1ousHiijIFvhZ0WeisC2gqJv86O3H3B/tGC6Jg1eQZdvu0gExMHjm1PgKGxjr1/60tW5mWrlH4JFylEQwh2NPN/9ABd7ckAQIi0640lNblg+R+6LpoA2NNmQCbazzbZuTaVtJQhZLLzADZhoA4Ld8WWfOlU6T6Az44sYdV4KBCnLHMD57z0qkALl4v4Yfw7TV65X3333aPL1YJSooPD7EbcY+HCBqYR2JA2FNFupL1DPPRG7tOP34nifHI47LGPTaDdfURABGSnHrZp5FoBw1wRhl2KLPyPBPP3gUWVUEI9mRfsOmV8mUlof53WMCiCLWoC7DgKXJa4stVIStAI+5/mEaSW3oq/IyhTaa7BRnFGx6530t8R4dt74MynUq3nk3rclHOUW7CXdFoAvJNYr1CIppIRvJ/HNNjKqSW2qtvU89YLu2VmOQUv8ZVnmkW/i3n+Fo2vyAWWFYwMj4M0qSU= vlad@vlad-A520M-H
         passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
         script: |
           # Выполняет pull образа с DockerHub
